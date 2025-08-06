@@ -75,7 +75,8 @@ class hand_tracker():
 
 
 def main():
-    cap = cv.VideoCapture(1)
+    # Choose which camera to use. Default for computer onboard webcam is 0
+    cap = cv.VideoCapture(0)
     tracker = hand_tracker()
     
     while True:
